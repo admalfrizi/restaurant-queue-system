@@ -1,0 +1,6 @@
+[submodule "restaurant-system-fe"]
+	path = restaurant-system-fe
+	url = https://github.com/admalfrizi/restaurant-system-fe.git
+[submodule "restaurant-system-be"]
+	path = restaurant-system-be
+	url = https://github.com/admalfrizi/restaurant-system-be.git
