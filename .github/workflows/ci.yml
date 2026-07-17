@@ -40,7 +40,7 @@ jobs:
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
 
     - name: Run Backend Unit Tests (PHPUnit)
-      working-directory: ./backend
+      working-directory: ./restaurant-system-be
       run: php artisan test
 
   frontend-tests-and-build:
@@ -57,13 +57,13 @@ jobs:
         node-version: '20'
 
     - name: Install Frontend Dependencies
-      working-directory: ./frontend
+      working-directory: ./restaurant-system-fe
       run: npm ci
 
     - name: Run Frontend Tests
-      working-directory: ./frontend
+      working-directory: ./restaurant-system-fe
       run: npm run test
 
     - name: Build Frontend
-      working-directory: ./frontend
+      working-directory: ./restaurant-system-fe
       run: npm run build
